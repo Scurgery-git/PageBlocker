@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PageBlocker</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="popup.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="./third-party/fontawesome-free-5.13.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="third-party/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./popup.css">
+    <script src="./third-party/jquery-3.5.1.min.js"></script>
+    <script src="./third-party/bootstrap-4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="popup-header">
@@ -31,28 +29,28 @@
     <div class="CONTAINER">
         <div class="title-row">
             <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-6"><span>The page</span></div>
-                <div class="col-sm-2"><span>Start</span></div>
-                <div class="col-sm-2"><span>End</span></div>
+                <div class="col-1"></div>
+                <div class="col-6"><span>The page</span></div>
+                <div class="col-2"><span>Start</span></div>
+                <div class="col-2"><span>End</span></div>
             </div>
             <hr class="in-table">
         </div>
         <div class="scroll-box">
             <div class="row reg-row">
-                <div class="col-sm-1"><span class="btn" id="delete"><i class="far fa-times-circle"></i></span></div>
-                <div class="url col-sm-6"><span>randomdomain</span></div>
-                <div class="col-sm-2"><span>14:00</span></div>
-                <div class="col-sm-2"><span>23:00</span></div>
+                <div class="col-1"><span class="btn" id="delete"><i class="far fa-times-circle"></i></span></div>
+                <div class="url col-6"><span>randomdomain</span></div>
+                <div class="col-2"><span>14:00</span></div>
+                <div class="col-2"><span>23:00</span></div>
             </div>
             <div class="row reg-row">
-                <div class="col-sm-1"><span class="btn" id="plus"><i class="fas fa-plus-circle"></i></span></div>
-                <div class="url col-sm-6"><input class="url-in" type="text" placeholder="Write the link here"></div>
-                <div class="col-sm-2"><input class="start" type="text" placeholder="HH:MM"></div>
-                <div class="col-sm-2"><input class="end" type="text" placeholder="HH:MM"></div>
+                <div class="col-1"><span class="btn" id="plus"><i class="fas fa-plus-circle"></i></span></div>
+                <div class="url col-6"><input class="url-in" type="text" placeholder="Write the link here"></div>
+                <div class="col-2"><input class="start" type="text" placeholder="HH:MM"></div>
+                <div class="col-2"><input class="end" type="text" placeholder="HH:MM"></div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
