@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-I had a time when I watched too much youtube, so I made this to prevent my self from opening it.
+random description
 
 ## Installation
 
