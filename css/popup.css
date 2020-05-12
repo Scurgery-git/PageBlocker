@@ -1,33 +1,34 @@
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url(./third-party/fonts/roboto/Roboto-Bold.ttf);
+    src: url(../third-party/fonts/roboto/Roboto-Bold.ttf);
     font-weight: 700;
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url(./third-party/fonts/roboto/Roboto-Light.ttf);
+    src: url(../third-party/fonts/roboto/Roboto-Light.ttf);
     font-weight: 200;
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url(./third-party/fonts/roboto/Roboto-Medium.ttf);
+    src: url(../third-party/fonts/roboto/Roboto-Medium.ttf);
     font-weight: 400;
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url(./third-party/fonts/roboto/Roboto-Thin.ttf);
+    src: url(../third-party/fonts/roboto/Roboto-Thin.ttf);
     font-weight: 100;
 }
 
-@font-face{
+@font-face {
     font-family: Menlo;
-    src: url(./third-party/fonts/menlo/Menlo-Regular.ttf);
+    src: url(../third-party/fonts/menlo/Menlo-Regular.ttf);
 }
 
-html, body{
+html,
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin: 10px 0;
@@ -37,27 +38,27 @@ html, body{
     width: 384px;
 }
 
-h1{
+h1 {
     font-size: 22px;
     font-weight: 300;
 }
 
-.title-bold{
+.title-bold {
     font-weight: 700 !important;
 }
 
-h2{
+h2 {
     font-family: 'Menlo', monospace;
     font-size: 10px;
 }
 
-div.logo{
+div.logo {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
 
-a.github{
+a.github {
     font-family: 'Menlo', monospace;
     display: flex;
     justify-content: center;
@@ -69,11 +70,11 @@ a.github{
     transition: color 0.2s ease-in-out;
 }
 
-a.github:hover{
+a.github:hover {
     color: #6e5494;
 }
 
-.title-row{
+.title-row {
     width: 100%;
     position: sticky;
     top: 0;
@@ -83,11 +84,11 @@ a.github:hover{
     color: #3f3f3f;
 }
 
-hr.in-table{
+hr.in-table {
     margin: 5px -5px 0 -5px;
 }
 
-.CONTAINER{
+.CONTAINER {
     width: 100%;
     max-height: 236px;
     display: flex;
@@ -102,61 +103,63 @@ hr.in-table{
     width: 8px;
     height: 8px;
     border-radius: 15px;
-  }
-  
+}
+
 .CONTAINER::-webkit-scrollbar-track {
-    background: #cccccc; 
+    background: #cccccc;
     border-radius: 15px;
-  }
+}
 
 .CONTAINER::-webkit-scrollbar-thumb {
-    background: #aaaaaa; 
+    background: #aaaaaa;
     border-radius: 15px;
-  }
+}
 
 .CONTAINER::-webkit-scrollbar-thumb:hover {
-    background:  #aaaaaa;
-  }
+    background: #aaaaaa;
+}
 
-.scroll-box{
+.scroll-box {
     padding-top: 5px;
     font-family: 'Menlo', monospace;
     color: #3f3f3f !important;
 }
 
-div.row{
+div.row {
     margin: 0;
 }
 
-.row>div{
+.row>div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.url{
+.url {
     color: #8f8f8f;
 }
 
 
-input:active, input:focus{
+input:active,
+input:focus {
     outline: none;
     outline-offset: 0;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     transition: color 0.2s ease-in-out;
 }
 
-#delete:hover{
+#delete:hover {
     color: #a31818;
 }
 
-#plus:hover{
+#plus:hover {
     color: #1c8f0d;
 }
 
-.start, .end{
+.start,
+.end {
     width: 50px;
 }
