@@ -1,16 +1,14 @@
 function setDomainsHtml(){
     chrome.storage.sync.get(['urls'], result => { 
-        console.log(result.urls);
         let domains = $('.domains').html();
         if (typeof(result.urls) != 'undefined') {
             for (let i = 0; i < result.urls.length; i++) {
                 domains += `<div class="row reg-row">
                         <div class="col-1"><span class="btn" id="delete"><i class="far fa-times-circle"></i></span></div>
                         <div class="url col-6"><span>${result.urls[i].display}</span></div>
-                        <div class="col-2"><span>${result.urls[i].start}</span></div>
-                        <div class="col-2"><span>${result.urls[i].end}</span></div>
+                        <div class="col-2"><span>${result.urls[i].start[0]}:${result.urls[i].start[1]}</span></div>
+                        <div class="col-2"><span>${result.urls[i].end[0]}:${result.urls[i].end[1]}</span></div>
                         </div>`;
-                        console.log(domains)
             }
         }
         
@@ -28,7 +26,11 @@ function getTime(raw) {
 }
 
 function getUrl(urlWithoutHTTP) {
-    return urlWithoutHTTP.slice(0, urlWithoutHTTP.indexOf('/'));
+    if (urlWithoutHTTP.indexOf('/') == -1) {
+        return urlWithoutHTTP.slice(0, urlWithoutHTTP.length);
+    } else {
+        return urlWithoutHTTP.slice(0, urlWithoutHTTP.indexOf('/'));
+    }
 }
 
 setDomainsHtml();
@@ -49,10 +51,10 @@ $('#plus').click(() => {
     };
 
     if (url.indexOf('http://') != -1) {
-        name = getUrl(url.slice('http://'.length, -1));
+        name = getUrl(url.slice('http://'.length, url.length));
         url = 'http://' + name;
     } else if (url.indexOf('https://') != -1) {
-        name = getUrl(url.slice('https://'.length, -1));
+        name = getUrl(url.slice('https://'.length, url.length));
         url = 'https://' + name;
     } else {
         wrong.url = true;
